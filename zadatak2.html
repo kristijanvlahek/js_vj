@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <p>
+        Ovo je prvi p tag
+    </p>
+    <p>
+        Ovo je drugi p tag
+    </p>
+    <p>
+        Ovo je treci p tag
+    </p>
+    <p>
+        Ovo je cetvrti p tag
+    </p>
+    <input type="radio" onclick="mojaFunkcija_plavo()" name="opcija">Plava pozadinska boja
+    <input type="radio" onclick="mojaFunkcija_zeleno()" name="opcija">Zelena pozadinska boja
+    <script>
+        function mojaFunkcija_plavo(){
+            var ptag = document.getElementsByTagName("p");
+            var i;
+            for (i=0; i<ptag.length; i++){
+                ptag[i].style.backgroundColor = "blue";
+            }
+
+        }
+        function mojaFunkcija_zeleno(){
+            var ptag = document.getElementsByTagName("p");
+            var i;
+            for (i=0; i<ptag.length; i++){
+                ptag[i].style.backgroundColor = "green";
+            }
+        }
+    </script>
+</body>
+</html>

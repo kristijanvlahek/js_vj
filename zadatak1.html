@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <div id="div" style="display: none">
+        <textarea placeholder="Ovo je tekstno polje" ></textarea>
+        <button id="skriveni">Sakrij</button>
+    </div>
+    <p> Kliknite na gumb ispod da bi prikazali skriveni div</p>
+    <button id="gumb">Prikazi</button>
+    <script>
+        var btn = document.getElementById('gumb');
+
+        btn.onclick = function() {
+            var div = document.getElementById('div');
+            if (div.style.display === 'none'){
+                div.style.display = 'block';
+            }
+        }
+
+        var btn_skriveni = document.getElementById('skriveni');
+
+        btn_skriveni.onclick = function(){
+            var div = document.getElementById('div');
+            if (div.style.display === 'block'){
+                div.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
